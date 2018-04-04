@@ -15,7 +15,7 @@ public class Main {
         myDog.eat();
         myDog.move();
 
-
+        
 
     }
 

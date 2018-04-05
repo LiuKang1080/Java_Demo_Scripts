@@ -1,5 +1,5 @@
 package com.shiva;
-
+//import java.lang
 public class Main {
 
     public static void main(String[] args) {
@@ -15,5 +15,21 @@ public class Main {
         MyAnimal newAnimal = new MyAnimal();
         newAnimal.eat();
         newAnimal.move();
+
+
+        // let's look in Java.lang to see what are classes, interfaces, and abstract classes:
+
+        // Regular Classes: Assertion Error
+            // Assertion error directly inherits from Error Class Object
+            // it has overloaded methods for each primitive data type in Java.
+
+        // Abstract Classes: Enum
+            // Abstract class that implements 2 interfaces: Comparable and Serializable
+            // there are overloaded methods that only return something, perform various actions, if not "throw new" is used instead for multiple methods
+
+        // Interface: Readable
+            // we only have 1 method and it reads characters into the specified buffer frame.
+            // public method
+
     }
 }

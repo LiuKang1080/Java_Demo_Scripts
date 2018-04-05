@@ -1,9 +1,6 @@
 package com.shiva;
 
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.SQLException;
-import java.sql.Statement;
+import java.sql.*;
 
 public class Main {
 
@@ -24,6 +21,16 @@ public class Main {
             // statement.execute("INSERT INTO contacts (name, phone, email) VALUES ('shiva', 1234567890, 'shiva@email')");
             // statement.execute("INSERT INTO contacts (name, phone, email) VALUES ('james', 9876543210, 'james@email')");
             // statement.execute("INSERT INTO contacts (name, phone, email) VALUES ('anil', 9874563210, 'anil@email')");
+
+            // getting data from the database, and allowing java to use the data:
+            statement.execute("SELECT * FROM contacts");
+            ResultSet results = statement.getResultSet();
+            // while loop through all the of the results
+
+            while (results.next()) {
+                System.out.println(results.getString("name") + " " + results.getInt("phone") + " " + results.getString("email"));
+            }
+            results.close();
 
 
             // generally it's good programming practice to close resources we are no longer using.

@@ -21,7 +21,10 @@ public class Main {
             statement.execute("CREATE TABLE IF NOT EXISTS contacts (name TEXT, phone INTEGER, email TEXT )");
 
             // we can now add data into the database:
-            statement.execute("INSERT INTO contacts (name, phone, email) VALUES ('shiva', 1234567890, 'shivaemail')");
+            // statement.execute("INSERT INTO contacts (name, phone, email) VALUES ('shiva', 1234567890, 'shiva@email')");
+            // statement.execute("INSERT INTO contacts (name, phone, email) VALUES ('james', 9876543210, 'james@email')");
+            // statement.execute("INSERT INTO contacts (name, phone, email) VALUES ('anil', 9874563210, 'anil@email')");
+
 
             // generally it's good programming practice to close resources we are no longer using.
             statement.close();

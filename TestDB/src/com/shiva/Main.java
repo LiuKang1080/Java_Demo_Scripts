@@ -10,8 +10,9 @@ public class Main {
         // try and except statement for the connection of the database
         try {
             Connection conn = DriverManager.getConnection("jdbc:sqlite:C:\\SQLite3\\Databases\\testjava.db");
+            // we've now made the connection to the database
 
-            // to make commands in sql we first need to make the statements:
+            // to make commands in sql we first need to make the instance from the Statement class:
             Statement statement = conn.createStatement();
 
             // we;ve now made the Statement, we can now run the .execute() method to run our SQL statements.
@@ -40,7 +41,7 @@ public class Main {
         } catch (SQLException e) {
             System.out.println("Failed to connect to the database: " + e.getMessage());
         }
-        // we've now made the connection to the database
+
 
 
     }

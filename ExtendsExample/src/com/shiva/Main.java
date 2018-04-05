@@ -23,10 +23,6 @@ public class Main {
         delta.takeOff();
         delta.fly();
         delta.landPlane();
-
-
-
-
     }
 
 }

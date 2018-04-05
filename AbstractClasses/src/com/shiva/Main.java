@@ -22,6 +22,7 @@ public class Main {
 
         batman.attack();
         batman.move();
+        ((Batman) batman).donateToCharity(987654321.123);
 
         superman.move();
         superman.attack();

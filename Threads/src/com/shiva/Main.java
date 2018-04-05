@@ -32,7 +32,9 @@ public class Main {
 
 
         // implement the runnable() method from runnableClass:
-
+        Thread myRunnableThread = new Thread(new runnableClass());
+        // we've now created a new thread, we can use it like we did before.
+        myRunnableThread.start();
 
     }
 }

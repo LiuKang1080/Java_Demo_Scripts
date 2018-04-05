@@ -1,4 +1,7 @@
 package com.shiva;
 
-public class SuperClass {
+public abstract class SuperClass {
+
+    // the remaining classes will use the abstract method:
+    public abstract void performAction();
 }

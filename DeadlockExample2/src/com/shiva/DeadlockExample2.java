@@ -10,7 +10,7 @@ public class DeadlockExample2 {
         this.count++;
         System.out.println("Entered deadlock method.");
         // sleep for a while while another thread gets made
-        Thread.sleep(250);
+//        Thread.sleep(250);
         while (this.count != 1)
         {
             System.out.println("Waiting " + this.count);
@@ -22,7 +22,7 @@ public class DeadlockExample2 {
     // same method except this time we will use synchronize method
     public synchronized void nodeadlock() throws InterruptedException {
         this.count++;
-        System.out.println("Entered NODEADLOCK method.");
+        System.out.println("Entered NO DEADLOCK method.");
         Thread.sleep(250);
         while (this.count != 1)
         {
@@ -30,7 +30,6 @@ public class DeadlockExample2 {
         }
         this.count--;
     }
-
 
     // notice how the methods are exactly the same, except the keyword synchronize in the second method.
 }

@@ -23,7 +23,7 @@ public class Main {
             // statement.execute("INSERT INTO contacts (name, phone, email) VALUES ('shiva', 1234567890, 'shiva@email')");
             // statement.execute("INSERT INTO contacts (name, phone, email) VALUES ('james', 9876543210, 'james@email')");
             // statement.execute("INSERT INTO contacts (name, phone, email) VALUES ('anil', 9874563210, 'anil@email')");
-            statement.execute("");
+            // statement.execute("");
 
 
             // getting data from the database, and allowing java to use the data:

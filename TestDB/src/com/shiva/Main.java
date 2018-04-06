@@ -17,6 +17,7 @@ public class Main {
 
             // we;ve now made the Statement, we can now run the .execute() method to run our SQL statements.
             statement.execute("CREATE TABLE IF NOT EXISTS contacts (name TEXT, phone INTEGER, email TEXT )");
+            statement.execute("CREATE TABLE IF NOT EXISTS employee (name TEXT, id INTEGER)");
 
             // we can now add data into the database:
             // statement.execute("INSERT INTO contacts (name, phone, email) VALUES ('shiva', 1234567890, 'shiva@email')");
